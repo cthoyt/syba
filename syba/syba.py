@@ -253,7 +253,6 @@ if __name__ == "__main__":
     
     this_dir, this_filename = os.path.split(__file__)
     syba = SybaClassifier()
-    syba.fitDefaultScore()
 
     with args.output_file as out, args.input_file as inp:
         if header:
