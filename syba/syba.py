@@ -30,7 +30,7 @@ class SybaClassifier:
     """
     SYBA clasifier
     """
-    def __init__(self, neighbourhood=4, count_file=None):
+    def __init__(self, neighbourhood=4, load_default=True):
         self.fragments = {}
         self.ALL_OFF_FRAGS_SCORE = None
         self.pNS = None
@@ -43,7 +43,7 @@ class SybaClassifier:
                  4: (-2.939230216688627, 0.1883123534101861),
                  5: (-4.536353950205819, 0.2060140915608036)
                 }
-        if count_file is None:
+        if load_default:
             self.fitDefaultScore()
 
 
